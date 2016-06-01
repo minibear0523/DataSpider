@@ -2,6 +2,7 @@
 import requests as req
 from multiprocessing.dummy import Pool as ThreadPool
 
+
 class Spider:
     def __init__(self, resource):
         """
@@ -12,4 +13,8 @@ class Spider:
         self.resource = resource
         self.pool = ThreadPool(resource.pool_limit)
 
-    
+    def set_up(self):
+        """
+        根据
+        :return:
+        """
