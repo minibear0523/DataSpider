@@ -10,4 +10,8 @@ class Resources:
         """
         super.__init__()
         self.host = host
-        self.APIs = APIs
+        self.api_list = APIs
+        self.parameters = {}
+
+    def set_pool_limit(self, limit):
+        self.pool_limit = limit
