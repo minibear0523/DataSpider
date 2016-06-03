@@ -35,9 +35,9 @@ class FitTimeClass:
     def _commit(self):
         self.conn.commit()
 
-    def insert_data(self, data):
+    def insert_data(self, query, data):
         """
         Insert data into database
         """
-        self.cursor.execute()
+        self.cursor.execute(query, data)
         self._commit()

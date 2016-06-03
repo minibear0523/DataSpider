@@ -4,3 +4,7 @@ from rq import Queue
 
 
 q = Queue(connection=Redis())
+
+
+def output_result(results):
+    job = q.enqueue_call()
