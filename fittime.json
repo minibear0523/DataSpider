@@ -1,0 +1,111 @@
+{
+  "_type": "export",
+  "__export_format": 1,
+  "__export_date": "2016-06-03T09:22:48.475Z",
+  "__export_source": "insomnia.chrome.app:v2.6.10",
+  "items": [
+    {
+      "_type": "request_group",
+      "_id": "grp_1462617039305",
+      "name": "FitTime",
+      "environments": {},
+      "requests": [
+        {
+          "_type": "request",
+          "_id": "req_1462617039305",
+          "url": "https://api.rjft.net/profile/5196",
+          "method": "GET",
+          "body": "{}",
+          "headers": [],
+          "params": [],
+          "authentication": {
+            "_type": "basic",
+            "username": "",
+            "password": ""
+          },
+          "__insomnia": {
+            "format": "json",
+            "panel_width": 0.5
+          },
+          "name": "Myself Profile"
+        },
+        {
+          "_type": "request",
+          "_id": "req_1462623351805",
+          "url": "https://api.rjft.net/social/user/587023/activity?before=&count=1700",
+          "method": "GET",
+          "body": "{}",
+          "headers": [],
+          "params": [],
+          "authentication": {
+            "_type": "basic",
+            "username": "",
+            "password": ""
+          },
+          "__insomnia": {
+            "format": "json",
+            "panel_width": 0.5
+          },
+          "name": "Activity List"
+        },
+        {
+          "_type": "request",
+          "_id": "req_1462623387243",
+          "url": "https://api.rjft.net/statistics/user/5196",
+          "method": "GET",
+          "body": "{}",
+          "headers": [],
+          "params": [],
+          "authentication": {
+            "_type": "basic",
+            "username": "",
+            "password": ""
+          },
+          "__insomnia": {
+            "format": "json",
+            "panel_width": 0.5
+          },
+          "name": "Statistics"
+        },
+        {
+          "_type": "request",
+          "_id": "req_1463137541695",
+          "url": "https://api.rjft.net/social/activity/5008566",
+          "method": "GET",
+          "body": "{}",
+          "headers": [],
+          "params": [],
+          "authentication": {
+            "_type": "basic",
+            "username": "",
+            "password": ""
+          },
+          "__insomnia": {
+            "format": "json",
+            "panel_width": 0.5
+          },
+          "name": "Activity Detail"
+        },
+        {
+          "_type": "request",
+          "_id": "req_1463137580062",
+          "url": "https://api.rjft.net/api/v2/articles/1220",
+          "method": "GET",
+          "body": "{}",
+          "headers": [],
+          "params": [],
+          "authentication": {
+            "_type": "basic",
+            "username": "",
+            "password": ""
+          },
+          "__insomnia": {
+            "format": "json",
+            "panel_width": 0.5
+          },
+          "name": "Articles Detail"
+        }
+      ]
+    }
+  ]
+}
