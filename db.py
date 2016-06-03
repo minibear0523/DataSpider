@@ -4,6 +4,7 @@ from datetime import datetime
 
 
 DATE_FORMAT = "%Y-%m-%d"
+USER_ID_LIMIT_PER_CLIENT = 200
 GET_USER_ID_FOR_SPIDER = """SELECT user_id FROM user_profile ORDER BY user_id ASC LIMIT %s OFFSET %s"""
 
 
@@ -25,6 +26,11 @@ class FitTimeClass:
         """
         self.conn = psycopg2.connect("dbname=fittime user=MiniBear")
         self.cursor = self.conn.cursor()
+
+    def get_user_id(self, index):
+        self.cursor.execute(GET_USER_ID_FOR_SPIDER, (USER_ID_LIMIT_PER_CLIENT, index))
+        data = self.cursor.fetchall()
+        return map(lambda x: x[0], data)
 
     def _commit(self):
         self.conn.commit()
