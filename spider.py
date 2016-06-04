@@ -46,6 +46,9 @@ def request_user_social_activity_list(url):
     return res
 
 
-def crawl(user_id):
+def crawl_user_activity_list(user_id):
     url = form_url(user_id)
     return parse_result(content=request_user_social_activity_list(url=url))
+
+def crawl(start, pool_limit=20, user_id_limit=200):
+    pool = ThreadPool(pool_limit)

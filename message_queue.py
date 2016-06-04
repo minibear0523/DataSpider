@@ -7,4 +7,4 @@ q = Queue(connection=Redis())
 
 
 def output_result(results):
-    job = q.enqueue_call()
+    job = q.enqueue()
